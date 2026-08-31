@@ -2,5 +2,5 @@
   <rect x="2" y="2" width="60" height="60" rx="13" fill="#0c0a08" stroke="#cabfa8" stroke-opacity="0.35"/>
   <text x="32" y="35" text-anchor="middle" dominant-baseline="middle"
     font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif"
-    font-size="10" letter-spacing="0" fill="#ece4d3">casette.wtf</text>
+    font-size="13" letter-spacing="0" fill="#ece4d3">casette</text>
 </svg>
