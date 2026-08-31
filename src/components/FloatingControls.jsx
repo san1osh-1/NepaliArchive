@@ -99,7 +99,7 @@ export default function FloatingControls({
   const hoverTime = hoverRatio !== null ? (hoverRatio * duration).toFixed(0) : null
 
   return (
-    <div className="flex w-full max-w-xl items-center gap-4 sm:gap-5">
+    <div className="flex w-full max-w-xl items-center gap-3 sm:gap-5">
       <button
         type="button"
         onClick={onPrevious}
@@ -114,7 +114,7 @@ export default function FloatingControls({
         onClick={onPlayPause}
         disabled={disabled}
         aria-label={isPlaying ? "Pause" : "Play"}
-        className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-cream/35 text-cream transition-all hover:border-gold hover:text-gold hover:scale-105 disabled:opacity-30 disabled:hover:scale-100 disabled:hover:border-cream/35 disabled:hover:text-cream sm:h-14 sm:w-14"
+        className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-cream/35 text-cream transition-all hover:border-gold hover:text-gold hover:scale-105 disabled:opacity-30 disabled:hover:scale-100 disabled:hover:border-cream/35 disabled:hover:text-cream sm:h-14 sm:w-14"
       >
         {isPlaying ? <PauseIcon /> : <PlayIcon />}
       </button>
@@ -128,7 +128,7 @@ export default function FloatingControls({
         <NextIcon />
       </button>
 
-      <span className="w-9 shrink-0 text-right font-mono text-[10px] tracking-[0.08em] text-cream/50 sm:text-[11px]">
+      <span className="w-8 shrink-0 text-right font-mono text-[9px] tracking-[0.05em] text-cream/50 sm:w-9 sm:text-[11px] sm:tracking-[0.08em]">
         {formatTime(progress)}
       </span>
 
@@ -173,7 +173,7 @@ export default function FloatingControls({
         />
       </div>
 
-      <span className="w-9 shrink-0 font-mono text-[10px] tracking-[0.08em] text-cream/50 sm:text-[11px]">
+      <span className="w-8 shrink-0 font-mono text-[9px] tracking-[0.05em] text-cream/50 sm:w-9 sm:text-[11px] sm:tracking-[0.08em]">
         {formatTime(duration)}
       </span>
     </div>
