@@ -6,7 +6,7 @@
 export default function ArchiveCenter() {
   return (
     <div className="pointer-events-none flex flex-col items-center gap-5 px-6 text-center sm:gap-6">
-      <p className="font-mono text-[12px] tracking-[0.28em] text-white sm:text-lg sm:tracking-[0.4em]">
+      <p className="font-mono text-[10px] tracking-[0.25em] text-white sm:text-lg sm:tracking-[0.4em]">
         पुराना दिनहरूको सङ्ग्रह
       </p>
 

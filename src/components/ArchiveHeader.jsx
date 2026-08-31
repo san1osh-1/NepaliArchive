@@ -9,8 +9,8 @@ export default function ArchiveHeader({ song }) {
   const spotifyHref = song?.spotifyUrl || null
 
   return (
-    <header className="pointer-events-none fixed inset-x-0 top-0 z-30 flex items-start justify-between gap-6 px-5 py-5 sm:px-10 sm:py-8">
-      <span className="pointer-events-auto whitespace-nowrap font-mono text-[13px] tracking-[0.22em] text-cream/80 transition-colors hover:text-cream sm:text-xs sm:tracking-[0.28em]">
+    <header className="pointer-events-none fixed inset-x-0 top-0 z-30 flex items-center justify-between gap-6 px-5 py-5 sm:px-10 sm:py-8">
+      <span className="pointer-events-auto whitespace-nowrap font-mono text-[11px] tracking-[0.2em] text-cream/80 transition-colors hover:text-cream sm:text-xs sm:tracking-[0.28em]">
         नेपाली गीत–संग्रह
       </span>
 
