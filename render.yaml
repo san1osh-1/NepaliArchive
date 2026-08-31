@@ -1,0 +1,25 @@
+# Render.com blueprint — https://render.com/docs/blueprint-spec
+#
+# Deploy:
+#   1. Push this repo to GitHub.
+#   2. In Render, choose "New > Blueprint" and connect the repo.
+#   3. The service below is created automatically; it installs deps,
+#      builds the React app, and runs the Express server (API + site).
+#   4. Use the generated *.onrender.com URL.
+#
+# Notes:
+#   - SQLite is seeded from src/data/songs.js on first boot, so a fresh
+#     instance is populated automatically. If you later want to persist
+#     edits made through the DB, attach a Render Disk and set DB_PATH to it.
+
+services:
+  - type: web
+    name: nepali-archive
+    runtime: node
+    plan: free
+    buildCommand: npm ci && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: 22
